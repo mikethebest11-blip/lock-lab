@@ -33,3 +33,8 @@ dependencies:
         repo_id: 1425880673
         uses:
             - 'mikethebest11-blip/lock-dep@main'
+    'mikethebest11-blip/lock-dep@main':
+        ref: 'main'
+        commit: 'sha1-7367b48e051258ab7340fac274b78fc4bebb360a'
+        owner_id: 333925542
+        repo_id: 1425880597
