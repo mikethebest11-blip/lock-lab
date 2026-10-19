@@ -3,8 +3,23 @@
 # Docs: https://gh.io/actions-lockfile
 version: 'v0.0.3'
 workflows:
-    '.github/workflows/reusable-lab.yml':
+    '.github/workflows/case-lab.yml':
         - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/docker-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/loc-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
+        - 'mikethebest11-blip/lock-action@variant-b'
+    '.github/workflows/lock.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/missing.yml':
+        - 'mikethebest11-blip/lock-action@main'
+        - 'mikethebest11-blip/lock-action@variant-b'
+    '.github/workflows/plain-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/refs-lab.yml':
+        - 'mikethebest11-blip/lock-action@refs/heads/main'
+    '.github/workflows/reusable-lab.yml': []
     '.github/workflows/weird1.yml':
         - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/weird2.yml':
@@ -13,22 +28,24 @@ workflows:
         - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/weird4.yml':
         - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/loc-lab.yml':
-        - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/case-lab.yml':
-        - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/docker-lab.yml':
-        - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/refs-lab.yml':
-        - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/lock.yml':
-        - 'mikethebest11-blip/lock-action@main'
-    '.github/workflows/missing.yml':
-        - 'mikethebest11-blip/lock-action@main'
 dependencies:
     'mikethebest11-blip/lock-action@main':
         ref: 'main'
         commit: 'sha1-cfe501378861a22fdf5c25b06afd5937aa3f51da'
+        owner_id: 333925542
+        repo_id: 1425880673
+        uses:
+            - 'mikethebest11-blip/lock-dep@main'
+    'mikethebest11-blip/lock-action@refs/heads/main':
+        ref: 'refs/heads/main'
+        commit: 'sha1-134097d2658297ad0ce0ba21c40a3f0b4dfa2ede'
+        owner_id: 333925542
+        repo_id: 1425880673
+        uses:
+            - 'mikethebest11-blip/lock-dep@main'
+    'mikethebest11-blip/lock-action@variant-b':
+        ref: 'variant-b'
+        commit: 'sha1-8121cd47245c928b475bfcd76abfad0f02f266e5'
         owner_id: 333925542
         repo_id: 1425880673
         uses:
