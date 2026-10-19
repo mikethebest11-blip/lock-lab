@@ -5,6 +5,8 @@ version: 'v0.0.3'
 workflows:
     '.github/workflows/lock.yml':
         - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/missing.yml':
+        - 'mikethebest11-blip/lock-action@main'
 dependencies:
     'mikethebest11-blip/lock-action@main':
         ref: 'main'
