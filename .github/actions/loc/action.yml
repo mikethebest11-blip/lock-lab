@@ -1,0 +1,6 @@
+name: loc
+description: local composite
+runs:
+  using: composite
+  steps:
+    - uses: mikethebest11-blip/lock-action@variant-b

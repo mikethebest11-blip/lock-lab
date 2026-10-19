@@ -1,0 +1,9 @@
+name: loc-lab
+on:
+  workflow_dispatch:
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/loc
+      - uses: mikethebest11-blip/lock-action@main

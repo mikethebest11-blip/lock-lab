@@ -3,6 +3,16 @@
 # Docs: https://gh.io/actions-lockfile
 version: 'v0.0.3'
 workflows:
+    '.github/workflows/weird1.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/weird2.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/weird3.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/weird4.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/loc-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/case-lab.yml':
         - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/docker-lab.yml':
