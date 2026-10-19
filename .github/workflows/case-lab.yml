@@ -5,4 +5,4 @@ jobs:
   lab:
     runs-on: ubuntu-latest
     steps:
-      - uses: Mikethebest11-Blob/lock-action@main
+      - uses: Mikethebest11-Blip/lock-action@main
