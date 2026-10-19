@@ -31,7 +31,7 @@ workflows:
 dependencies:
     'mikethebest11-blip/lock-action@main':
         ref: 'main'
-        commit: 'sha1-74888715ee75109e2418afb4a90571f597b28d03'
+        commit: 'sha1-cfe501378861a22fdf5c25b06afd5937aa3f51da'
         owner_id: 333925542
         repo_id: 1425880673
         uses:
