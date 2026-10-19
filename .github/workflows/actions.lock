@@ -3,6 +3,10 @@
 # Docs: https://gh.io/actions-lockfile
 version: 'v0.0.3'
 workflows:
+    '.github/workflows/case-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
+    '.github/workflows/docker-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/refs-lab.yml':
         - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/lock.yml':

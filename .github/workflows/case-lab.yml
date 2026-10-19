@@ -1,0 +1,8 @@
+name: case-lab
+on:
+  workflow_dispatch:
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Mikethebest11-Blob/lock-action@main
