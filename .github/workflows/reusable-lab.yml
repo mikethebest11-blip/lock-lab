@@ -1,0 +1,6 @@
+name: reusable-lab
+on:
+  workflow_dispatch:
+jobs:
+  call:
+    uses: mikethebest11-blip/lock-action/.github/workflows/reuse.yml@variant-b

@@ -3,6 +3,8 @@
 # Docs: https://gh.io/actions-lockfile
 version: 'v0.0.3'
 workflows:
+    '.github/workflows/reusable-lab.yml':
+        - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/weird1.yml':
         - 'mikethebest11-blip/lock-action@main'
     '.github/workflows/weird2.yml':
