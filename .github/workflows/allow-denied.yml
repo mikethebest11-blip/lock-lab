@@ -1,0 +1,8 @@
+name: allow-denied
+on:
+  workflow_dispatch:
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mikethebest11-blip/lock-action@main
