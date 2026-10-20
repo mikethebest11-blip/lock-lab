@@ -1,0 +1,8 @@
+name: pin-owner-sha
+on:
+  workflow_dispatch:
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mikethebest11-blip/lock-action@134097d2658297ad0ce0ba21c40a3f0b4dfa2ede
