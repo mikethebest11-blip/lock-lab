@@ -1,0 +1,11 @@
+name: allow-gh
+on:
+  workflow_dispatch:
+jobs:
+  g:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
