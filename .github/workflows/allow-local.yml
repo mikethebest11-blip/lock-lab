@@ -1,0 +1,9 @@
+name: allow-local
+on:
+  workflow_dispatch:
+jobs:
+  l:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ${'$'}/.github/actions/loc
