@@ -1,0 +1,9 @@
+name: loc2
+description: local composite with denied non-owner dep
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: '17'
