@@ -1,0 +1,10 @@
+name: allow-docker
+on:
+  workflow_dispatch:
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://alpine:3.20
+        with:
+          args: echo DOCKER-ALLOWED
